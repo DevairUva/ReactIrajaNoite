@@ -1,13 +1,14 @@
-import logo from './assets/react.svg'
+// import logo from './assets/react.svg'
 import LogoJS from './assets/javascript.svg'
 import './App.css'
-import Form from './components/Form'
-import NovaTarefa from './components/NovaTarefa'
-import GetAxios from './components/GetAxios'
-import BotaoUseEffect from './components/BotaoUseEffect'
-import DeleteAxios from './components/DeleteAxios'
-import PutAxios from './components/PutAxios'
-import { BrowserRouter, Route, Routes, Link, Router } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
+// import Form from './components/Form'
+// import NovaTarefa from './components/NovaTarefa'
+// import GetAxios from './components/GetAxios'
+// import BotaoUseEffect from './components/BotaoUseEffect'
+// import DeleteAxios from './components/DeleteAxios'
+// import PutAxios from './components/PutAxios'
+// import { BrowserRouter, Route, Routes, Link, Router } from 'react-router-dom'
 function App() {
   return (
     <div className="App">
@@ -15,9 +16,13 @@ function App() {
         <img src={LogoJS} width="120px" />
       </div>
       <h2>Primeiro Projeto React com Vite</h2>
+
+      <Outlet/>
+
+      <h2>Footer</h2>
       
-      <GetAxios />
-      <BrowserRouter>
+      {/* <GetAxios /> */}
+      {/* <BrowserRouter>
 
       <ul>
         <li><Link to="/">Home</Link></li>
@@ -36,7 +41,7 @@ function App() {
           <Route path='/deletar' element={<DeleteAxios/>} />
         </Routes>
 
-      </BrowserRouter>
+      </BrowserRouter> */}
       {/* <Form />
       <br />
       <NovaTarefa />
