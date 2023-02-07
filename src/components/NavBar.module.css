@@ -1,0 +1,10 @@
+.links{
+    color:yellow;
+    text-decoration: none;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.links:hover{
+    color:green;
+}

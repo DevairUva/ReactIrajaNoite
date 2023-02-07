@@ -1,6 +1,6 @@
 // import logo from './assets/react.svg'
-import LogoJS from './assets/javascript.svg'
-import './App.css'
+// import LogoJS from './assets/javascript.svg'
+// import './App.css'
 import { Outlet } from 'react-router-dom'
 // import Form from './components/Form'
 // import NovaTarefa from './components/NovaTarefa'
@@ -9,13 +9,18 @@ import { Outlet } from 'react-router-dom'
 // import DeleteAxios from './components/DeleteAxios'
 // import PutAxios from './components/PutAxios'
 // import { BrowserRouter, Route, Routes, Link, Router } from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBar from './components/NavBar';
+
 function App() {
   return (
     <div className="App">
-      <div>
+      <NavBar/>
+      {/* <div>
         <img src={LogoJS} width="120px" />
-      </div>
+      </div> */}
       <h2>Primeiro Projeto React com Vite</h2>
+
 
       <Outlet/>
 
